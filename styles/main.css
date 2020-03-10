@@ -1,4 +1,79 @@
+html,
 body {
   margin: 0; }
+  html .container,
+  body .container {
+    display: grid;
+    grid-auto-columns: minmax(300px, 100%);
+    grid-auto-rows: 300px; }
+    html .container > div:nth-child(1)::before,
+    body .container > div:nth-child(1)::before {
+      content: "1";
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 100px;
+      color: #fff; }
+    html .container > div:nth-child(2)::before,
+    body .container > div:nth-child(2)::before {
+      content: "2";
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 100px;
+      color: #fff; }
+    html .container > div:nth-child(3)::before,
+    body .container > div:nth-child(3)::before {
+      content: "3";
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 100px;
+      color: #fff; }
+    html .container > div:nth-child(4)::before,
+    body .container > div:nth-child(4)::before {
+      content: "4";
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 100px;
+      color: #fff; }
+    html .container > div:nth-child(5)::before,
+    body .container > div:nth-child(5)::before {
+      content: "5";
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 100px;
+      color: #fff; }
+    html .container > div:nth-child(6)::before,
+    body .container > div:nth-child(6)::before {
+      content: "6";
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 100px;
+      color: #fff; }
+    html .container div,
+    body .container div {
+      height: 300px;
+      min-width: 300px;
+      color: white;
+      text-align: center;
+      line-height: 300px; }
+    html .container .container__one,
+    body .container .container__one {
+      background-color: #f00; }
+    html .container .container__two,
+    body .container .container__two {
+      background-color: #cc0000; }
+    html .container .container__three,
+    body .container .container__three {
+      background-color: #990000; }
+    html .container .container__four,
+    body .container .container__four {
+      background-color: #660000; }
+    html .container .container__five,
+    body .container .container__five {
+      background-color: #330000; }
+    html .container .container__six,
+    body .container .container__six {
+      background-color: black; }
+
+@media (min-width: 600px) {
+  .container {
+    grid-template-columns: repeat(2, minmax(300px, 100%)); } }
+
+@media (min-width: 900px) {
+  .container {
+    grid-template-columns: repeat(3, minmax(300px, 100%)); } }
 
 /*# sourceMappingURL=main.css.map */
